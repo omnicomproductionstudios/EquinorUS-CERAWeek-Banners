@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  height: auto;
+}
+
+sup, sub {
+  font-size: 50%;
+  line-height: 1.2;
+}
+
+html, body {
+  width:728px;
+  height:90px;
+  margin: 0;
+}
+
+#main{
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:728px;
+  height:90px;
+  background-color: #F9F8F5;
+  border: solid 1px #000000;
+  overflow:hidden;
+}
+
+.full-width {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 728px;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+#copy1{
+  width: 402px;
+  height: 21px;
+  position: absolute;
+  top: 35px;
+  left: 22px;
+}
+#copy2{
+  width: 359px;
+  height: 39px;
+  position: absolute;
+  top: 26px;
+  left: 21px;
+}
+#square{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 95px;
+  height: 117px;
+  transform: translate(102px, 66px);
+  transform-origin: center center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+#cta{
+  position: absolute;
+  top: 36px;
+  left: 444px;
+  width: 125px;
+  height: 18px;
+  overflow: visible;
+}
+.ctaText{
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  width: 101px;
+  height: 12px;
+}
+.ctaArrow{
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  width: 17px;
+  height: 12px;
+  transform-origin: center center;
+}
+#copy3{
+  width: 328px;
+  height: 17px;
+  top: 37px;
+  left: 21px;
+}
+#copy3Line1,
+#copy3Line2{
+  width: 127px;
+  height: 29px;
+  top: 195px;
+  left: 20px;
+  pointer-events: none;
+  will-change: clip-path;
+}
+.copy {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+#default_exit{
+  top:0px;
+  left:0px;
+  width: 728px;
+  height: 90px;
+}
+
+.btn{
+  position: absolute;
+  top:0px;
+  left:0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus{outline: 0}
+
+::-moz-focus-inner{border: 0}
