@@ -26,7 +26,7 @@ function animate() {
 
   
   tl.to(square, 0.6, { autoAlpha: 1, scale:1, rotationY: 0, ease: Power1.easeOut }, '+=2.5');
-  tl.to(square, 1, {scale:1, ease: Power1.easeOut}, '<+=1');
+  tl.to(square, 1, {scale:1, ease: Power1.easeOut}, '<+=0.5');
   tl.to(square, 1, {scale:4, ease: Power1.easeOut}, '<+=0.2');
   tl.to(copy2, 0.5, {autoAlpha:1, y:0, ease: Power1.easeOut}, '>');
   tl.to(cta, 0.7, {autoAlpha:1, ease: Power1.easeOut}, '+=1.5');

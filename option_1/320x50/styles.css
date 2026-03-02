@@ -18,8 +18,8 @@ sup, sub {
 }
 
 html, body {
-  width:300px;
-  height:250px;
+  width:320px;
+  height:50px;
   margin: 0;
 }
 
@@ -27,8 +27,8 @@ html, body {
   position:absolute;
   left:0px;
   top:0px;
-  width:300px;
-  height:250px;
+  width:320px;
+  height:50px;
   background-color: #F9F8F5;
   border: solid 1px #000000;
   overflow:hidden;
@@ -38,7 +38,7 @@ html, body {
   position:absolute;
   left: 0px;
   top: 0px;
-  width: 300px;
+  width: 320px;
   height: auto;
 }
 
@@ -47,35 +47,35 @@ html, body {
   text-align: -moz-center;
   text-align: -webkit-center;
 }
-#copy1{
-  width: 177px;
-  height: 77px;
+.copy1{
+  width: 201px;
+  height: 15px;
   position: absolute;
-  top: 85px;
-  left: 22px;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
 }
-#copy2{
-  width: 215px;
-  height: 55px;
-  position: absolute;
-  top: 78px;
-  left: 21px;
+#copy1a{
+  left: 20px;
+  top: 18px;
 }
-#square{
+.copy2{
+  width: 188px;
+  height: 17px;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 95px;
-  height: 117px;
-  transform: translate(102px, 66px);
-  transform-origin: center center;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  left: 20px;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}
+#copy2a{
+  top: 9px;
+}
+#copy2b{
+  top: 26px;
 }
 #cta{
   position: absolute;
-  top: 155px;
-  left: 22px;
+  top: 36px;
+  left: 444px;
   width: 125px;
   height: 18px;
   overflow: visible;
@@ -96,10 +96,19 @@ html, body {
   transform-origin: center center;
 }
 #copy3{
+  width: 328px;
+  height: 17px;
+  top: 37px;
+  left: 21px;
+}
+#copy3Line1,
+#copy3Line2{
   width: 127px;
   height: 29px;
   top: 195px;
   left: 20px;
+  pointer-events: none;
+  will-change: clip-path;
 }
 .copy {
   color: #ffffff;
@@ -110,8 +119,8 @@ html, body {
 #default_exit{
   top:0px;
   left:0px;
-  width: 300px;
-  height: 250px;
+  width: 320px;
+  height: 50px;
 }
 
 .btn{

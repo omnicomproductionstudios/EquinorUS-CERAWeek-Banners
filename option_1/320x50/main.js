@@ -16,16 +16,16 @@ function init() {
 
 function animate() {
   tl.set(["#main"], { autoAlpha: 1, force3D: true });
-  tl.set(["#copy2"], { y: 20, autoAlpha: 0, force3D: true });
-  tl.set(["#copy3"], { autoAlpha: 0, force3D: true });
-  tl.set(square, { autoAlpha: 0, scale:0, rotationY: -360, transformPerspective: 600, force3D: true });
-  tl.to(square, 0.6, { autoAlpha: 1, scale:1, rotationY: 0, ease: Power1.easeOut }, '+=2.5');
-  tl.to(square, 1, {scale:1, ease: Power1.easeOut}, '<+=1');
-  tl.to(square, 1, {scale:4, ease: Power1.easeOut}, '<+=0.2');
-  tl.to(copy2, 0.5, {autoAlpha:1, y:0, ease: Power1.easeOut}, '>');
-  tl.to(cta, 0.7, {autoAlpha:1, ease: Power1.easeOut}, '+=1.5');
-  tl.to(".ctaArrow", 0.2, {duration:1, x: 5, ease: "none", repeat: 1, yoyo: true  });
-  tl.to(copy3, 0.5, {autoAlpha:1, ease: Power1.easeOut}, '+=1');
+  tl.set([".copy1Container, .copy2Container, #cta"], { x: 40, force3D: true });
+  tl.set(["#copy1a, #copy2a, #copy2b, #copy2c"], { autoAlpha:1 });
+
+  tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, '+=0.5');
+  tl.staggerTo(["#copy1a"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.4, '<');
+
+  tl.to(".copy1Container", 0.5, {autoAlpha:0, ease: Power1.easeOut}, '+=2.5');
+
+  tl.to(".copy2Container", 1.5, { x:0, ease: Power1.easeOut}, '>');
+  tl.staggerTo(["#copy2a", "#copy2b", "#copy2c"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.5, '<');
 }
 
 
