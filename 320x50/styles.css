@@ -135,3 +135,69 @@ html, body {
 :focus{outline: 0}
 
 ::-moz-focus-inner{border: 0}
+
+
+
+/* Logo animation */
+
+.logoBox{
+  position: absolute;
+  right: -26px;
+  top: -22px;
+  width: 118px;
+  height: 68px;
+  /* background: #00000061; */
+  transform: scale(0.65);
+}
+.logoCopy{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 67px;
+}
+.leafs{
+  position: relative;
+  top: 0px;
+  right: 0px;
+  height: 68px;
+  width: 100%;
+}
+.one{
+  position: absolute;
+  top: 17px;
+  right: 11px;
+  width: 26.5px;
+  scale: 1.5;
+  rotate:62deg;
+}
+
+.two{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 8.77px;
+}
+.three{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 9.5px;
+}
+.four{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 4px;
+}
+.five{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 3px;
+}
+.six{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 5px;
+}
