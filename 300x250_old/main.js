@@ -15,8 +15,6 @@ function init() {
 }
 
 function animate() {
-  
-
   tl.set(["#main"], { autoAlpha: 1, force3D: true });
   tl.set([".copy1Container, .copy2Container, #cta"], { x: 40, force3D: true });
   tl.set(["#cta"], { x: 25, force3D: true });
@@ -24,71 +22,6 @@ function animate() {
   tl.set(["#copy3a", "#copy3b"], { scale:1.3, force3D: true });
   tl.set(["#copy1a", "#copy1b", "#copy1c, #copy2a", "#copy2b", "#copy2c, .ctaText, #copy3a, #copy3b"], { autoAlpha: 1 });
   tl.set(square, { autoAlpha: 0, scale:0, rotationY: -360, transformPerspective: 600, force3D: true });
-  
-  
-  // logo animation
-  tl.set([".logoCopy"], { x: -17, y: 17, scale:1.5, force3D: true })
-  
-  tl.set([".two"], { x: 20, rotation: 52, force3D: true })
-  tl.set(".three", { x: 20, y: 0, rotation: 52, transformOrigin: "center center" });
-  tl.set(".four", { x: 20, y: 10, rotation: 52, transformOrigin: "center center" });
-  tl.set(".five", { x: 20, y: 10, rotation: 52, transformOrigin: "center center" });
-  tl.set(".six", { x: 20, y: 10, rotation: 52, transformOrigin: "center center" });
-
-
-  tl.to('.one', 1, {autoAlpha:1, rotation: 179, scale: 0.5, ease: "power1.inOut"})
-  tl.to('.logoCopy', 1, {autoAlpha:1, x: 0, y: 0, scale: 1, ease: "power1.inOut"}, "<")
-  tl.to('.two', {
-    duration: 0.8,
-    autoAlpha: 1,
-    keyframes: [
-      { x: 10, y: -8, rotation: 24, ease: "power1.out", duration: 0.3 },
-      { x: 3, y: -2, rotation: 8, ease: "power1.inOut", duration: 0.25 },
-      { x: 0, y: 0, rotation: 0, ease: "back.out(1.1)", duration: 0.25 }
-    ]
-  }, '<+=0.5');
-
-  tl.to('.three', {
-    duration: 0.75,
-    autoAlpha: 1,
-    keyframes: [
-      { x: 10, y: -6, rotation: 20, ease: "power1.out", duration: 0.28 },
-      { x: 1, y: 9, rotation: 7, ease: "power1.inOut", duration: 0.22 },
-      { x: -2.5, y: 15, rotation: 0, ease: "back.out(1.15)", duration: 0.25 }
-    ]
-  }, '<');
-
-  tl.to('.four', {
-    duration: 0.75,
-    autoAlpha: 1,
-    keyframes: [
-      { x: 9, y: -4, rotation: 18, ease: "power1.out", duration: 0.28 },
-      { x: 2, y: 12, rotation: 6, ease: "power1.inOut", duration: 0.22 },
-      { x: 0, y: 21, rotation: 0, ease: "back.out(1.2)", duration: 0.25 }
-    ]
-  }, '<');
-
-  tl.to('.five', {
-    duration: 0.75,
-    autoAlpha: 1,
-    keyframes: [
-      { x: 11, y: -4, rotation: 18, ease: "power1.out", duration: 0.28 },
-      { x: 8, y: 11, rotation: 6, ease: "power1.inOut", duration: 0.22 },
-      { x: 6, y: 21, rotation: 0, ease: "back.out(1.2)", duration: 0.25 }
-    ]
-  }, '<');
-
-  tl.to('.six', {
-    duration: 0.75,
-    autoAlpha: 1,
-    keyframes: [
-      { x: 14, y: -7, rotation: 22, ease: "power1.out", duration: 0.28 },
-      { x: 12, y: 8, rotation: 8, ease: "power1.inOut", duration: 0.22 },
-      { x: 10, y: 16.5, rotation: 0, ease: "back.out(1.25)", duration: 0.25 }
-    ]
-  }, '<');
-
-
 
   
   tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, '+=0.5');
