@@ -22,8 +22,8 @@ function animate() {
   tl.set(["#cta"], { x: 25, force3D: true });
   tl.set(".ctaArrow", {x: -15})
 
-  tl.set([".copy3Container"], {x: 40, force3D: true });
-  tl.set(["#copy3a", "#copy3b"], { scale:1.3, force3D: true });
+  tl.set([".copy3Container"], {x: 50, transformOrigin: "left center", force3D: true });
+  tl.set(["#copy3a", "#copy3b"], { scale: 1.3, transformOrigin: "left center", force3D: true });
   // tl.set(["#copy1a", "#copy1b", "#copy1c, #copy2a", "#copy2b", "#copy2c, .ctaText, #copy3a, #copy3b"], { autoAlpha: 1 });
   tl.set(square, { autoAlpha: 0, scale:0, rotationY: -360, transformPerspective: 600, force3D: true });
   
@@ -69,13 +69,12 @@ function animate() {
 
   tl.to("#cta", 1.5, { x:0, ease: Power1.easeOut}, '>+=1');
   tl.to(".ctaText", 0.5, {autoAlpha:1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, '<');
-  tl.to(".ctaArrow", 0.2, { autoAlpha:1, x:0, ease: Power1.easeOut, }, '>+=0.1');
+  tl.to(".ctaArrow", 0.5, { autoAlpha:1, x:0, ease: Power1.easeOut, }, '>+=0.1');
 
-  tl.to(".copy3Container", 1.5, { x:0, ease: Power1.easeOut}, '>+=1.5');
-  tl.staggerTo(["#copy3a", "#copy3b"], 0.5, {autoAlpha:1,clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.4, '<');
+  tl.to(".copy3Container", 1.5, { x: 0, ease: "power1.out" }, '>+=1.5');
+  tl.staggerTo(["#copy3a", "#copy3b"], 0.5, {autoAlpha: 1, clipPath: "inset(0% 0% 0% 0%)", ease: "power1.out" }, 0.4, '<');
 
-
-  tl.to(["#copy3a", "#copy3b"], 1, {scale:1, ease: Power1.easeOut}, '>+=0.7');
+  tl.to(["#copy3a", "#copy3b"], 1.5, {scale: 1, ease: "power1.out" }, '>');
 }
 
 

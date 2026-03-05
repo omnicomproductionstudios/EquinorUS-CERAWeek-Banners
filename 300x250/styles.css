@@ -150,7 +150,7 @@ html, body {
 .ctaArrow{
   position: absolute;
   right: 0px;
-  top: 3px;
+  top: 5px;
   width: 17px;
   height: 12px;
   transform-origin: center center;
