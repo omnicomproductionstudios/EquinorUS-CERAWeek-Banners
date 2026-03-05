@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=300,height=250">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript">
+      var clickTag = "";
+    </script>
+  </head>
+  <body onload="init();">
+    <div id="main">
+
+      <img src="images/bg.jpg" id="bg" class="absolute full-width" />
+      
+      <div class="copy1Container">
+        <img src="images/copy1a.svg" id="copy1a" class="copy1" alt="">
+        <img src="images/copy1b.svg" id="copy1b" class="copy1" alt="">
+        <img src="images/copy1c.svg" id="copy1c" class="copy1" alt="">
+      </div>
+
+      <img src="images/square.svg" id="square" class="hidden" />
+
+      <div class="copy2Container">
+        <img src="images/copy2a.svg" id="copy2a" class="copy2" alt="">
+        <img src="images/copy2b.svg" id="copy2b" class="copy2" alt="">
+        <img src="images/copy2c.svg" id="copy2c" class="copy2" alt="">
+      </div>
+
+      <div id="cta">
+        <img src="images/ctaText.svg" class="ctaText" alt="">
+        <img src="images/ctaArrow.svg" class="ctaArrow hidden" alt="">
+      </div>
+      
+      <div class="copy3Container">
+        <img src="images/copy3a.svg" id="copy3a" class="copy3" alt="">
+        <img src="images/copy3b.svg" id="copy3b" class="copy3" alt="">
+      </div>
+
+      <img src="images/logo.png" id="logo" class="absolute full-width" />
+
+
+      <div id="default_exit" class="btn"></div>
+    </div>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+      var clickArea = document.getElementById("default_exit");
+      clickArea.onclick = function() {
+        window.open(clickTag);
+      };
+    </script>
+  </body>
+</html>
