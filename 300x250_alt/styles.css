@@ -146,11 +146,12 @@ html, body {
   height: 12px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
+  background-color: #f9f8f5;
 }
 .ctaArrow{
   position: absolute;
   right: 0px;
-  top: 3px;
+  top: 5px;
   width: 17px;
   height: 12px;
   transform-origin: center center;
@@ -161,13 +162,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-.logo-container {
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+
 
 svg {
     width: 100%;
@@ -192,3 +187,73 @@ svg {
 :focus{outline: 0}
 
 ::-moz-focus-inner{border: 0}
+
+
+/* Logo animation */
+
+.logoBox{
+  position: absolute;
+  right: 0px;
+  top: -8px;
+  width: 118px;
+  height: 68px;
+  /* background: #00000061; */
+}
+.logoCopy{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 67px;
+}
+.leafs{
+  position: relative;
+  top: 0px;
+  right: 0px;
+  height: 68px;
+  width: 100%;
+}
+.one{
+  position: absolute;
+  top: 17px;
+  right: 11px;
+  width: 26.5px;
+  scale: 1.5;
+  rotate:62deg;
+}
+
+.two{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 8.77px;
+}
+.three{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 9.5px;
+}
+.four{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 4px;
+}
+.five{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 3px;
+}
+.six{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 5px;
+}
+.gif_logo{
+  position: absolute;
+  width: 108px;
+  left: 176px;
+  top: 10px;
+}

@@ -146,6 +146,7 @@ html, body {
   height: 12px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
+  background-color: #f9f8f5;
 }
 .ctaArrow{
   position: absolute;
@@ -249,4 +250,10 @@ svg {
   top: 35px;
   right: 34px;
   width: 5px;
+}
+.gif_logo{
+  position: absolute;
+  width: 108px;
+  left: 176px;
+  top: 10px;
 }

@@ -24,6 +24,16 @@ function animate() {
 
   tl.set([".copy3Container"], {x: 50, transformOrigin: "left center", force3D: true });
   tl.set(["#copy3a", "#copy3b"], { scale: 1.3, transformOrigin: "left center", force3D: true });
+
+  tl.set(logo, { autoAlpha: 0 });
+
+
+  tl.to(logo, 1, {
+    autoAlpha: 1,
+    ease: "power1.out"
+  }, "+=0.5");
+
+
   tl.set(square, { autoAlpha: 0,
   scaleX: 0,
   scaleY: 1,

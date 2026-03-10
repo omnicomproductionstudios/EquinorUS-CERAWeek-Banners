@@ -100,11 +100,12 @@ html, body {
   height: 12px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
+  background-color: #f9f8f5;
 }
 .ctaArrow{
   position: absolute;
   right: 0px;
-  top: 3px;
+  top: 4px;
   width: 17px;
   height: 12px;
   transform-origin: center center;
