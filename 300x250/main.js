@@ -3,12 +3,14 @@ var startTime;
 
 // Timeline reference
 var tl;
+var tl1;
 
 // Init tricggered by onLoad in Body tag
 function init() {
   // Set Banner duration timer
   startTime = new Date();
   // Set Global Timeline
+  tl1 = new TimelineMax({});
   tl = gsap.timeline({ onComplete: endTime });
   animate();
   setRollover();
@@ -20,75 +22,32 @@ function animate() {
   tl.set(["#main"], { autoAlpha: 1, force3D: true });
   tl.set([".copy1Container, .copy2Container, #cta"], { x: 40, force3D: true });
   tl.set(["#cta"], { x: 25, force3D: true });
-  tl.set(".ctaArrow", {x: -15})
+  tl.set(".ctaArrow", {x: -20})
 
-  tl.set([".copy3Container"], {x: 50, transformOrigin: "left center", force3D: true });
-  tl.set(["#copy3a", "#copy3b"], { scale: 1.3, transformOrigin: "left center", force3D: true });
-  tl.set(square, { autoAlpha: 0,
-  scaleX: 0,
-  scaleY: 1,
-  rotationY: -90,
-  transformPerspective: 600,
-  transformOrigin: "center center",
-  force3D: true});
+  tl.set([".copy3Container"], {x: 50, scale: 1.3, transformOrigin: "left 50%", force3D: true });
+  tl.set(square, { autoAlpha: 0, scaleX: 0, scaleY: 1, rotationY: -90, transformPerspective: 600, transformOrigin: "center center", force3D: true});
   
+  tl.to(".gif_logo", 0.5, {autoAlpha:1}, '0')
+  tl1.to('#bg', 5, { autoAlpha:1, scale:1.1, transformOrigin:"bottom center"}, "0")
+  tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, "+=0.5");
+  tl.staggerTo(["#copy1a", "#copy1b", "#copy1c"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.5, '<');
   
-  // logo animation start
-
-  // tl.set(".leafs", { scale: 1.2, transformOrigin: "68% 75%", force3D: true })
-  // tl.set(".logoCopy", { x: -17, y: 17, scale:1.5, force3D: true })
-  // tl.set([".two", ".three", ".four", ".five", ".six", ".logoCopy"], { autoAlpha: 0 });
-  // tl.set(".two", { x: 20, rotation: 52, force3D: true })
-  // tl.set(".three", { x: 20, y: 0, rotation: 52, transformOrigin: "center center" });
-  // tl.set(".four", { x: 20, y: 10, rotation: 52, transformOrigin: "center center" });
-  // tl.set(".five", { x: 20, y: 10, rotation: 52, transformOrigin: "center center" });
-  // tl.set(".six", { x: 20, y: 10, rotation: 52, transformOrigin: "center center" });
-
-  // tl.to('.one', 1, {autoAlpha:1, rotation: 179, scale: 0.5, ease: "power1.inOut"})
-  // tl.to('.two', 1, {autoAlpha:1, x:0, rotation: 0, ease: "power1.inOut"}, '<+=0.4')
-  // tl.to('.leafs', 1, {scale: 1, ease: "power1.inOut"}, "<");
-  // tl.to('.three', 1, {x: -2.5, rotation: 0, autoAlpha: 1, ease: "power1.inOut" }, '<');
-  // tl.to('.three', 1, {y: 15, ease: "back.out(-5)",}, '<');
-  // tl.to('.four', 1, {x: 0, rotation: 0, autoAlpha: 1, ease: "power1.inOut" }, '<');
-  // tl.to('.four', 1, {y: 21, ease: "back.out(-10)",}, '<');
-  // tl.to('.five', 1, {x: 6, rotation: 0, autoAlpha: 1, ease: "power1.inOut" }, '<');
-  // tl.to('.five', 1, {y: 21, ease: "back.out(-10)",}, '<');
-  // tl.to('.six', 1, {x: 10, rotation: 0, autoAlpha: 1, ease: "power1.inOut" }, '<');
-  // tl.to('.six', 1, {y: 16.5, ease: "back.out(-20)",}, '<');
-  // tl.to('.logoCopy', 1, {autoAlpha:1, x: 0, y: 0, scale: 1, ease: "power1.inOut"}, "<")
-  
-  // logo animation start end
-  tl.to('#bg', 1, { autoAlpha:1, scale:1.07, transformOrigin:"bottom center"}, "0")
-  tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, '+=0.5');
-  tl.staggerTo(["#copy1a", "#copy1b", "#copy1c"], 0.5, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.4, '<');
-
-  // tl.to(square, 0.6, { autoAlpha: 1, scale:1, rotationY: 0, ease: Power1.easeOut }, '+=1');
-  // tl.to(square, 0.5, {scale:1, ease: Power1.easeOut}, '<+=0.3');
-  // tl.to(square, 1, {scale:4, ease: Power1.easeOut}, '<+=0.2');
-    tl.to(square, {autoAlpha:1})
-    tl.to(square, 0.5, {
-    autoAlpha: 1,
-    rotationY: 0,
-    scaleX: 1,
-    ease: "power1.out"
-  }, "+=0.5");
-
-tl.to(square, 0.5, {
-  scale: 4,
-  ease: "none"
-}, "<+=0.5");
+  tl.to(square, {autoAlpha:1})
+  tl.to(square, 0.5, { autoAlpha: 1, rotationY: 0, scaleX: 1, ease: "power1.out" }, "<+=0.5");
+  tl.to(square, 0.5, { scale: 4, ease: "none" }, "<+=0.5");
 
   tl.to(".copy2Container", 1.5, { x:0, ease: Power1.easeOut}, '>');
   tl.staggerTo(["#copy2a", "#copy2b", "#copy2c"], 0.5, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.4, '<');
 
   tl.to("#cta", 1.5, { x:0, ease: Power1.easeOut}, '>+=1');
   tl.to(".ctaText", 0.5, {autoAlpha:1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, '<');
-  tl.to(".ctaArrow", 0.5, { autoAlpha:1, x:0, ease: Power1.easeOut, }, '>+=0.1');
+  tl.to(".ctaArrow", 0.3, { autoAlpha:1, x:0, ease: "none", }, '>+=0.1');
 
   tl.to(".copy3Container", 1.5, { x: 0, ease: "power1.out" }, '>+=1.5');
   tl.staggerTo(["#copy3a", "#copy3b"], 0.5, {autoAlpha: 1, clipPath: "inset(0% 0% 0% 0%)", ease: "power1.out" }, 0.4, '<');
+  tl.to(".copy3Container", 1.5, { scale: 1, ease: "power1.out" }, '>+=1');
 
-  tl.to(["#copy3a", "#copy3b"], 1.5, {scale: 1, ease: "power1.out" }, '>+=1');
+  // tl.to(["#copy3a", "#copy3b"], 1.5, {scale: 1, ease: "power1.out" }, '>+=1');
 }
 
 

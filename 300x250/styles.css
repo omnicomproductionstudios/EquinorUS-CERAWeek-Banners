@@ -102,12 +102,20 @@ html, body {
   clip-path: inset(0 100% 0 0);
   opacity: 0;
 }
-#copy3a{
+.copy3Container{
+  height: 50px;
+  position: relative;
   top: 193px;
 }
 #copy3b{
-  top: 209px;
+  top: 16px;
 }
+/* #copy3a{
+  top: 193px;
+} */
+/* #copy3b{
+  top: 209px;
+} */
 
 #square{
   position: absolute;
@@ -146,7 +154,7 @@ html, body {
   height: 12px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
-  background-color: #f9f8f5;
+  background: #f9f8f5;
 }
 .ctaArrow{
   position: absolute;

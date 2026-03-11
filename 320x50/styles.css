@@ -136,7 +136,12 @@ html, body {
 
 ::-moz-focus-inner{border: 0}
 
-
+#logo{
+  width: 71px;
+  position: absolute;
+  right: 4px;
+  top: 1px;
+}
 
 /* Logo animation */
 

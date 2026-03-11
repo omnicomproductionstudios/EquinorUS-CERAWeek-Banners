@@ -100,7 +100,7 @@ html, body {
   height: 12px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
-  background-color: #f9f8f5;
+  background: #f9f8f5;
 }
 .ctaArrow{
   position: absolute;
@@ -151,7 +151,12 @@ html, body {
 
 ::-moz-focus-inner{border: 0}
 
-
+#logo{
+  position: absolute;
+  width: 106px;
+  right: 10px;
+  top: 6px;
+}
 
 /* Logo animation */
 
