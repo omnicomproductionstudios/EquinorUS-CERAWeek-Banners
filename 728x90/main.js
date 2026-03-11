@@ -21,7 +21,7 @@ function animate() {
   tl.set(".ctaArrow", {x: -15})
   tl.set([".copy3Container"], {x: 40, transformOrigin: "left center", force3D: true });
 
-
+  tl.to("#logo", 0.5, {autoAlpha:1}, '0');
   tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, '+=0.5');
   tl.to("#copy1a", 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, '<');
 

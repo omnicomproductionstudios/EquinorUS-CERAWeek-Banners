@@ -18,6 +18,7 @@ function animate() {
   tl.set(["#main"], { autoAlpha: 1, force3D: true });
   tl.set([".copy1Container, .copy2Container, #cta"], { x: 40, force3D: true });
   
+  tl.to("#logo", 0.5, {autoAlpha:1}, '0');
   tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, '+=0.5');
   tl.staggerTo(["#copy1a"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.4, '<');
 
