@@ -57,46 +57,54 @@ html, body {
   /* opacity: 0; */
 }
 .copy1{
-  width: 188px;
-  height: 29px;
   position: absolute;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
 }
 #copy1a{
-  left: 26px;
-  top: 81px;
+  left: 28px;
+  top: 85px;
+  width: 169.05px;
+  height: 22.8px;
 }
 #copy1b{
-  left: 26px;
-  top: 109px;
+  left: 27px;
+  top: 111px;
+  width: 148.34px;
+  height: 22.65px;
 }
 #copy1c{
-  left: 26px;
-  top: 136px;
+  left: 27px;
+  top: 143.5px;
+  width: 123.52px;
+  height: 17.6px;
 }
 
 .copy2{
-  width: 231px;
-  height: 20px;
   position: absolute;
   left: 21px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
 }
 #copy2a{
-  top: 76px;
+  top: 78px;
+  width: 212.41px;
+  height: 16.71px;
 }
 #copy2b{
-  top: 96px;
+  top: 98px;
+  width: 214.4px;
+  height: 17.53px;
 }
 #copy2c{
-  top: 116px;
+  top: 120px;
+  width: 154.99px;
+  height: 13.03px;
 }
 
 .copy3{
-  width: 128px;
-  height: 16px;
+  width: 125.03px;
+  height: 12.77px;
   position: absolute;
   left: 20px;
   clip-path: inset(0 100% 0 0);
@@ -105,7 +113,7 @@ html, body {
 .copy3Container{
   height: 50px;
   position: relative;
-  top: 193px;
+  top: 195px;
 }
 #copy3b{
   top: 16px;
@@ -150,8 +158,8 @@ html, body {
   position: absolute;
   left: 0px;
   top: 3px;
-  width: 101px;
-  height: 12px;
+  width: 100.64px;
+  height: 11.88px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
   background: #f9f8f5;
