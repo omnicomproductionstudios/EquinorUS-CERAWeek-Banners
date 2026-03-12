@@ -1,0 +1,222 @@
+
+* {
+  box-sizing: border-box;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  height: auto;
+}
+
+sup, sub {
+  font-size: 50%;
+  line-height: 1.2;
+}
+
+html, body {
+  width:728px;
+  height:90px;
+  margin: 0;
+}
+
+#main{
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:728px;
+  height:90px;
+  background-color: #F9F8F5;
+  border: solid 1px #000000;
+  overflow:hidden;
+}
+
+.full-width {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 728px;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+.copy1{
+  width: 402px;
+  height: 21px;
+  position: absolute;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}
+#copy1a{
+  left: 22px;
+  top: 36px;
+}
+.copy2{
+  width: 394px;
+  height: 21px;
+  position: absolute;
+  left: 20px;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}
+#copy2a{
+  top: 23px;
+}
+#copy2b{
+  top: 46px;
+}
+.copy3{
+  width: 328px;
+  height: 17px;
+  position: absolute;
+  left: 20px;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}
+#copy3a{
+  top: 37px;
+}
+
+#cta{
+  position: absolute;
+  top: 36px;
+  left: 444px;
+  width: 125px;
+  height: 18px;
+  overflow: visible;
+}
+.ctaText{
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  width: 101px;
+  height: 12px;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  background: #f9f8f5;
+}
+.ctaArrow{
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  width: 17px;
+  height: 12px;
+  transform-origin: center center;
+}
+#copy3{
+  width: 328px;
+  height: 17px;
+  top: 37px;
+  left: 21px;
+}
+#copy3Line1,
+#copy3Line2{
+  width: 127px;
+  height: 29px;
+  top: 195px;
+  left: 20px;
+  pointer-events: none;
+  will-change: clip-path;
+}
+.copy {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+#default_exit{
+  top:0px;
+  left:0px;
+  width: 728px;
+  height: 90px;
+}
+
+.btn{
+  position: absolute;
+  top:0px;
+  left:0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus{outline: 0}
+
+::-moz-focus-inner{border: 0}
+
+#logo{
+  position: absolute;
+  width: 106px;
+  right: 10px;
+  top: 6px;
+}
+
+/* Logo animation */
+
+.logoBox{
+  position: absolute;
+  right: -4px;
+  top: -12px;
+  width: 118px;
+  height: 68px;
+  /* background: #00000061; */
+}
+.logoCopy{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 67px;
+}
+.leafs{
+  position: relative;
+  top: 0px;
+  right: 0px;
+  height: 68px;
+  width: 100%;
+}
+.one{
+  position: absolute;
+  top: 17px;
+  right: 11px;
+  width: 26.5px;
+  scale: 1.5;
+  rotate:62deg;
+}
+
+.two{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 8.77px;
+}
+.three{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 9.5px;
+}
+.four{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 4px;
+}
+.five{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 3px;
+}
+.six{
+  position: absolute;
+  top: 35px;
+  right: 34px;
+  width: 5px;
+}
