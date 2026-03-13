@@ -56,7 +56,7 @@ html, body {
 }
 #copy1a{
   left: 20px;
-  top: 18px;
+  top: 20px;
 }
 .copy2{
   width: 188px;
@@ -117,8 +117,8 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 #default_exit{
-  top:0px;
-  left:0px;
+  top:-1px;
+  left:-1px;
   width: 320px;
   height: 50px;
 }
@@ -140,7 +140,7 @@ html, body {
   width: 71px;
   position: absolute;
   right: 4px;
-  top: 1px;
+  top: 3px;
 }
 
 /* Logo animation */
