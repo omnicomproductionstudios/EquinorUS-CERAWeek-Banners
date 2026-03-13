@@ -56,7 +56,7 @@ html, body {
 }
 #copy1a{
   left: 20px;
-  top: 20px;
+  top: 19px;
 }
 .copy2{
   width: 188px;
@@ -140,7 +140,7 @@ html, body {
   width: 71px;
   position: absolute;
   right: 4px;
-  top: 3px;
+  top: 0px;
 }
 
 /* Logo animation */
