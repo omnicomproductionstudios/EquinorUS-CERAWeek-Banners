@@ -62,14 +62,14 @@ html, body {
   opacity: 0;
 }
 #copy1a{
-  left: 28px;
-  top: 85px;
+  left: 27.7px;
+  top: 84.5px;
   width: 169.05px;
   height: 22.8px;
 }
 #copy1b{
-  left: 27px;
-  top: 111px;
+  left: 27.7px;
+  top: 111.3px;
   width: 148.34px;
   height: 22.65px;
 }
@@ -82,29 +82,29 @@ html, body {
 
 .copy2{
   position: absolute;
-  left: 21px;
+  left: 21.5px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
 }
 #copy2a{
   top: 78px;
-  width: 212.41px;
-  height: 16.71px;
+  width: 212px;
+  height: 17px;
 }
 #copy2b{
-  top: 98px;
-  width: 214.4px;
-  height: 17.53px;
+  top: 97.5px;
+  width: 214px;
+  height: 18px;
 }
 #copy2c{
   top: 120px;
-  width: 154.99px;
-  height: 13.03px;
+  width: 155.5px;
+  height: 13px;
 }
 
 .copy3{
-  width: 125.03px;
-  height: 12.77px;
+  width: 125.5px;
+  height: 13px;
   position: absolute;
   left: 20px;
   clip-path: inset(0 100% 0 0);
@@ -117,6 +117,7 @@ html, body {
 }
 #copy3b{
   top: 16px;
+  width: 127px;
 }
 /* #copy3a{
   top: 193px;
@@ -157,7 +158,7 @@ html, body {
 .ctaText{
   position: absolute;
   left: 0px;
-  top: 3px;
+  top: 3.4px;
   width: 100.64px;
   height: 11.88px;
   clip-path: inset(0 100% 0 0);

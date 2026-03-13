@@ -29,8 +29,9 @@ function animate() {
   
   tl.to(".gif_logo", 0.5, {autoAlpha:1}, '0')
   tl1.to('#bg', 5, { autoAlpha:1, scale:1.1, transformOrigin:"bottom center"}, "0")
-  tl.to(".copy1Container", 1.5, { x:0, ease: Power1.easeOut}, "+=0.5");
-  tl.staggerTo(["#copy1a", "#copy1b", "#copy1c"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.75, '<');
+  tl.to(".copy1Container", 1.5, { x: 0, ease: Power1.easeOut }, "+=0.5");
+
+  tl.staggerTo(["#copy1a", "#copy1b", "#copy1c"], 0.5, { autoAlpha: 1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut }, 0.5, "<");
   
   tl.to(square, {autoAlpha:1})
   tl.to(square, 0.5, { autoAlpha: 1, rotationY: 0, scaleX: 1, ease: "power1.out" }, "<+=0.5");
