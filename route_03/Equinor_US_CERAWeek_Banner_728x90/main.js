@@ -28,7 +28,7 @@ function animate() {
   tl.to(".copy1Container", 0.5, {autoAlpha:0, ease: Power1.easeOut}, '+=2.5');
 
   tl.to(".copy2Container", 1.5, { x:0, ease: Power1.easeOut}, '>');
-  tl.staggerTo(["#copy2a"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.7, '<');
+  tl.staggerTo(["#copy2a, #copy2b"], 1, {autoAlpha:1,  clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, 0.7, '<');
 
   tl.to("#cta", 1.5, { x:0, ease: Power1.easeOut}, '>+=1');
   tl.to(".ctaText", 0.5, {autoAlpha:1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, '<');

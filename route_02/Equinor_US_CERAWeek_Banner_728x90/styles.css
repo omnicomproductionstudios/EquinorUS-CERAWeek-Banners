@@ -59,18 +59,21 @@ html, body {
   top: 35px;
 }
 .copy2{
-  width: 337px;
-  height: 22px;
   position: absolute;
   left: 21.5px;
   clip-path: inset(0 100% 0 0);
   opacity: 0;
 }
-#copy2a{
-  top: 34.5px;
+#copy2a {
+  top: 24.5px;
+  width: 180px;
+  height: 21px;
 }
-#copy2b{
+#copy2b {
   top: 46px;
+  width: 250px;
+  height: 17px;
+  left: 20px;
 }
 .copy3{
   width: 328px;
