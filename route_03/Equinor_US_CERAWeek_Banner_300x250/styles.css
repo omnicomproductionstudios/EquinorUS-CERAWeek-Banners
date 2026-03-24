@@ -168,7 +168,7 @@ html, body {
 }
 .ctaArrow{
   position: absolute;
-  right: 0px;
+  left: 84px;
   top: 5px;
   width: 17px;
   height: 12px;

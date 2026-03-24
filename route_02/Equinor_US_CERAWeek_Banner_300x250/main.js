@@ -22,7 +22,7 @@ function animate() {
   tl.set(["#main"], { autoAlpha: 1, force3D: true });
   tl.set([".copy1Container, .copy2Container, #cta"], { x: 40, force3D: true });
   tl.set(["#cta"], { x: 25, force3D: true });
-  tl.set(".ctaArrow", {x: -20})
+  // tl.set(".ctaArrow", {x: -15})
 
   tl.set([".copy3Container"], {x: 50, scale: 1.1, transformOrigin: "left 50%", force3D: true });
   tl.set(square, { autoAlpha: 0, scaleX: 0, scaleY: 1, rotationY: -90, transformPerspective: 600, transformOrigin: "center center", force3D: true});
@@ -34,7 +34,7 @@ function animate() {
   tl.staggerTo(["#copy1a", "#copy1b"], 0.5, { autoAlpha: 1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut }, 0.5, "<");
   
   tl.to(square, {autoAlpha:1})
-  tl.to(square, 0.5, { autoAlpha: 1, rotationY: 0, scaleX: 1, ease: "power1.out" }, "<+=0.5");
+  tl.to(square, 0.5, { autoAlpha: 1, rotationY: 0, scaleX: 1, ease: "power1.out" }, "<+=1");
   tl.to(square, 0.5, { scale: 4, ease: "none" }, "<+=0.5");
 
   tl.to(".copy2Container", 1.5, { x:0, ease: Power1.easeOut}, '>');
@@ -42,11 +42,11 @@ function animate() {
 
   tl.to("#cta", 1.5, { x:0, ease: Power1.easeOut}, '>+=1');
   tl.to(".ctaText", 0.5, {autoAlpha:1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, '<');
-  tl.to(".ctaArrow", 0.3, { autoAlpha:1, x:0, ease: "none", }, '>+=0.1');
+  tl.to(".ctaArrow", 0.3, { autoAlpha:1, x:24, ease: "none", }, '>+=0.1');
 
   tl.to(".copy3Container", 1.5, { x: 0, ease: "power1.out" }, '>+=1.5');
   tl.staggerTo(["#copy3a", "#copy3b"], 0.5, {autoAlpha: 1, clipPath: "inset(0% 0% 0% 0%)", ease: "power1.out" }, 0.4, '<');
-  tl.to(".copy3Container", 1.5, { scale: 1, ease: "power1.out" }, '>+=1');
+  tl.to(".copy3Container", 1.5, { scale: 1, ease: "power1.out" }, '>+=0.3');
 
   // tl.to(["#copy3a", "#copy3b"], 1.5, {scale: 1, ease: "power1.out" }, '>+=1');
 }
@@ -62,11 +62,11 @@ function setRollover() {
 }
 
 function default_over(event) {
-  gsap.to(".ctaArrow", 0.2, {x: 5, ease: "none"});
+  gsap.to(".ctaArrow", 0.2, {x: 29, ease: "none"});
 }
 
 function default_out(event) {
-  gsap.to(".ctaArrow", 0.2, {x: 0, ease: "none"  });
+  gsap.to(".ctaArrow", 0.2, {x: 24, ease: "none"  });
 }
 
 

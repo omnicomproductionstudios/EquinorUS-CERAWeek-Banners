@@ -18,7 +18,7 @@ function animate() {
    tl.set(["#main"], { autoAlpha: 1, force3D: true });
   tl.set([".copy1Container, .copy2Container, #cta"], { x: 40, force3D: true });
   tl.set(["#cta"], { x: 25, force3D: true });
-  tl.set(".ctaArrow", {x: -15})
+  // tl.set(".ctaArrow", {x: -15})
   tl.set([".copy3Container"], {x: 40, transformOrigin: "left center", force3D: true });
 
   tl.to("#logo", 0.5, {autoAlpha:1}, '0');
@@ -32,7 +32,7 @@ function animate() {
 
   tl.to("#cta", 1.5, { x:0, ease: Power1.easeOut}, '>+=1');
   tl.to(".ctaText", 0.5, {autoAlpha:1, clipPath: "inset(0% 0% 0% 0%)", ease: Power1.easeOut}, '<');
-  tl.to(".ctaArrow", 0.3, { autoAlpha:1, x:0, ease: "none", }, '>+=0.1');
+  tl.to(".ctaArrow", 0.3, { autoAlpha:1, x:24, ease: "none", }, '>+=0.1');
 
   tl.to(".copy2Container", 0.5, {autoAlpha:0, ease: Power1.easeOut}, '+=2.5');
 
@@ -52,11 +52,11 @@ function setRollover() {
 }
 
 function default_over(event) {
-  gsap.to(".ctaArrow", 0.2, {x: 5, ease: "none"});
+  gsap.to(".ctaArrow", 0.2, {x: 29, ease: "none"});
 }
 
 function default_out(event) {
-  gsap.to(".ctaArrow", 0.2, {x: 0, ease: "none"  });
+  gsap.to(".ctaArrow", 0.2, {x: 24, ease: "none"  });
 }
 
 
